@@ -1,5 +1,17 @@
 # Aurora
 
+## multiplatform plugin preparation
+
+this repository starts from aurora 0.1.0, created by [joe croskey](https://www.joecroskey.com/world.html?open=projects), to develop a plugin for macos, windows and linux. the target formats are vst3 on all three platforms and audio unit on macos. this is an independent adaptation with no official affiliation with the author.
+
+the original source, juce 8.0.6 and license notices are included. the initial import preserves all 4,340 files from the archive; provenance, platform requirements and next steps are documented in [docs/MULTIPLATFORM.md](docs/MULTIPLATFORM.md).
+
+**status: source imported; multiplatform support is a development goal.** the author supplied macos validation records. this repository has passed five platform-independent test suites on linux, but has not reproduced a complete plugin build or validated daw playback on any platform. aurora runs as a daw plugin; standalone monitoring and system audio capture are outside the current scope.
+
+## original documentation
+
+the instructions, images and results below describe the original project, with a focus on macos. the records in `release-docs/` and `docs/VALIDATION.md` also belong to the received version; they do not establish windows or linux compatibility.
+
 An original, free, open-source audio meter and reactive visual plug-in. The default **Flight Deck** design combines dark instrument panels, phosphor colour, warm technical typography and fluid 3D scenes. The earlier **Gen X Soft Club** light themes remain available.
 
 **First release target: VST3 and Audio Unit, for Ableton and other compatible hosts.** Aurora is an audio effect. Put it on a track or the master bus; its audio output is bit-for-bit unchanged. It adds zero algorithmic latency, does not generate sound, and makes no network requests. The working name and visual direction can evolve.
@@ -209,7 +221,7 @@ export itself is unaffected. No incoming samples are written to disk.
 
 Aurora's original source is licensed under **GNU Affero General Public License v3.0 or later**; see [LICENSE](LICENSE). This matches the open-source route used for JUCE 8. JUCE is pinned to 8.0.6, commit `51a8a6d7aeae7326956d747737ccf1575e61e209`. Its bundled dependencies retain their own notices, including the VST3 SDK and Apple AudioUnitSDK. See [THIRD_PARTY.md](THIRD_PARTY.md).
 
-Ghost and MiniMeters were studied as functional references. No vendor plug-in binaries, source code, graphics, presets or branding were copied into Aurora. The interface and DSP are original. This repository has not been published to an external service.
+Ghost and MiniMeters were studied as functional references. No vendor plug-in binaries, source code, graphics, presets or branding were copied into Aurora. The interface and DSP are original.
 
 ## GPU visual validation and preview
 

@@ -2,7 +2,7 @@
 
 Aurora original code: copyright 2026 Aurora contributors, AGPL-3.0-or-later (see LICENSE).
 
-The build downloads JUCE 8.0.6 from https://github.com/juce-framework/JUCE at commit `51a8a6d7aeae7326956d747737ccf1575e61e209`.
+juce 8.0.6 is included in `third_party/JUCE/`, as received in the original archive. the author's documentation identifies commit `51a8a6d7aeae7326956d747737ccf1575e61e209` from https://github.com/juce-framework/JUCE. `scripts/build.sh` downloads tag `8.0.6` only when that directory is absent.
 
 JUCE 8 modules are available under AGPLv3 or a commercial license. This project uses the AGPLv3 option. Retain `third_party/JUCE/LICENSE.md` and the notices included with each enabled JUCE module when redistributing. The JUCE tree lists bundled dependencies and licenses, including VST3 (GPLv3 open-source option), AudioUnitSDK (Apache 2.0), FLAC, Ogg/Vorbis, zlib, pnglib, HarfBuzz and SheenBidi. macOS frameworks are system dependencies.
 

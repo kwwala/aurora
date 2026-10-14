@@ -1,6 +1,9 @@
 build/
+/build-*/
+/out/
+/.vs/
+/CMakeUserPresets.json
 .tools/
-third_party/JUCE/
 .DS_Store
 dist/
 backups/
